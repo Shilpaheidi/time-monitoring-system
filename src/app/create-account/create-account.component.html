@@ -1,0 +1,75 @@
+<!-- <div *ngIf="details.length > 0">
+    <h2>Stored Form Details:</h2>
+    <ul>
+        <li *ngFor="let detail of details">
+            <strong>Name:</strong> {{ detail.name }}<br>
+            <strong>Email:</strong> {{ detail.email }}<br>
+            <hr>
+        </li>
+    </ul>
+</div> -->
+
+<div style="height: 90vh;" class="flex justify-center gt-xs:overflow-hidden -mt-5 items-center   w-auto ">
+    <mat-card class="lt-xs:w-[94%]  lt-xs:h-[90%]  gt-xs:h-[369px] flex justify-center items-center">
+        <form [formGroup]="registrationForm" (ngSubmit)="submitForm()">
+
+            <div class="flex lt-xs:flex-col gt-xs:space-x-2 gt-xs:m-1">
+                <div>
+                    <mat-form-field appearance="outline" class="component--mat-form-field__custom-input component--mat-country_input__custom-style">
+                        <input matInput placeholder="Register Number" formControlName="regno" required>
+                    </mat-form-field>
+                </div>
+                <div>
+                    <mat-form-field appearance="outline">
+                        <input matInput placeholder="Name" formControlName="name" required>
+                    </mat-form-field>
+                </div>
+            </div>
+
+            <div class="flex lt-xs:flex-col gt-xs:space-x-2 gt-xs:m-1">
+                <div>
+                    <mat-form-field appearance="outline">
+                        <input matInput placeholder="Email ID" formControlName="email" required>
+                    </mat-form-field>
+                </div>
+                <div>
+                    <mat-form-field appearance="outline">
+                        <input matInput placeholder="Department" formControlName="department" required>
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="flex lt-xs:flex-col gt-xs:space-x-2 gt-xs:m-1">
+                <div>
+                    <mat-form-field appearance="outline">
+                        <input matInput placeholder="Mobile Number" formControlName="mobileNumber" required>
+                    </mat-form-field>
+                </div>
+                <div>
+                    <mat-form-field appearance="outline">
+                        <mat-select placeholder="Staff or Student" formControlName="role" required>
+                            <mat-option value="staff">Staff</mat-option>
+                            <mat-option value="student">Student</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="flex justify-center address">
+                <mat-form-field appearance="outline">
+                    <textarea matInput placeholder="Address" formControlName="address" required></textarea>
+                </mat-form-field>
+            </div>
+
+
+
+
+            <div class="flex justify-center space-x-2  mt-10 ">
+                <button mat-raised-button style="width: 100px;" color="primary" type="submit">Submit</button>
+                <button mat-raised-button color="primary" (click)="openSignInDialog()" type="submit">SignIn</button>
+            </div>
+        </form>
+    </mat-card>
+</div>
+
+
+
+<!-- [disabled]="registrationForm.invalid" -->

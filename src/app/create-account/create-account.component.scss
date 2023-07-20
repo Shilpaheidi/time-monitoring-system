@@ -1,0 +1,105 @@
+// @media screen and (min-width: 321px) {
+//     .flex justify-center mat-form-field {
+//         width: 430px;
+//     }
+// }
+
+// @media screen and (min-width: 321px) {
+//     .flex.justify-center.address mat-form-field {
+//         width: 430px;
+//     }
+
+//     mat-card {
+//         background-color: aquamarine;
+//         height: 60vh;
+//         width: fit-content;
+//     }
+// }
+
+
+mat-card {
+    background-color: rgb(184, 180, 172);
+   
+   
+}
+mat-form-field{
+    height: 50px;
+    padding: 7px;
+}
+
+// input {
+//     height: 10px;
+// }
+// .mat-form-field{
+//     height: 30px;
+// }
+.component--mat-form-field__custom-input {
+    .mat-form-field-flex > .mat-form-field-infix {
+      padding: 0px !important;
+      padding-top: 2px !important;
+      padding-bottom: 8px !important;
+    }
+  
+    .mat-form-field-label-wrapper {
+    //   font-size: $medium-font-weight;
+      top: -1.7em;
+      padding-top: 1em;
+    }
+  
+    &.mat-form-field-appearance-outline.mat-form-field-can-float.mat-form-field-should-float
+      .mat-form-field-label-wrapper {
+      // transform: translateY(-1.1em) scale(.75);
+      top: -1.3em;
+    }
+  
+    .mat-form-field-appearance-outline.mat-form-field-can-float.mat-form-field-should-float
+      .mat-form-field-label {
+      transform: translateY(-1.1em) scale(0.75);
+      width: 133.33333%;
+    }
+    .mat-form-field-wrapper {
+      padding-bottom: 0em;
+    }
+    // .mat-error {
+    //   font-size: $medium-font-size;
+    //   line-height: 3.4em;
+    // }
+    .mat-error {
+      margin-top: 1.2em;
+    }
+  }
+  
+  // * mat-form-field (text-area)
+  .component--mat-form-field__text-area-input {
+    .mat-form-field-flex > .mat-form-field-infix {
+      padding: 0px !important;
+      padding-top: 2px !important;
+      padding-bottom: 8px !important;
+    }
+  
+    .mat-form-field-label-wrapper {
+    //   font-size: $medium-font-weight;
+      top: -1.7em;
+      padding-top: 1em;
+    }
+  
+    &.mat-form-field-appearance-outline.mat-form-field-can-float.mat-form-field-should-float
+      .mat-form-field-label-wrapper {
+      // transform: translateY(-1.1em) scale(.75);
+      top: -1.3em;
+    }
+  
+    .mat-form-field-appearance-outline.mat-form-field-can-float.mat-form-field-should-float
+      .mat-form-field-label {
+      transform: translateY(-1.1em) scale(0.75);
+      width: 133.33333%;
+    }
+    .mat-form-field-wrapper {
+      padding-bottom: 0em;
+    }
+    .mat-error {
+    //   font-size: $medium-font-size;
+      line-height: 3.4em;
+    }
+  }
+  

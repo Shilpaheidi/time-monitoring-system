@@ -1,0 +1,70 @@
+<!-- {{regno}}
+{{name}} -->
+
+<div  class="  flex  gt-xs:justify-evenly items-center lt-xs:flex-col lt-xs:space-y-12  justify-center gt-xs:p-7 gt-xs:m-7      lt-xs:p-4 lt-xs:mb-2">
+
+
+    <div>
+        <form [formGroup]="deptmessage" (ngSubmit)=" sendEmail()">
+            <h1>Send message to Department</h1>
+            <div class="flex flex-col justify-center">
+                <div>
+
+                    <input matInput placeholder="Register No" formControlName="regno" required>
+
+                </div>
+                <div>
+
+                    <input matInput placeholder="Name" formControlName="name" required>
+
+                </div>
+                <div>
+
+                    <input matInput placeholder="Subject" formControlName="subject" required>
+
+                </div>
+                <div>
+
+                    <input matInput placeholder="Email" formControlName="email" required>
+
+                </div>
+                <div>
+
+                    <textarea matInput rows="4" formControlName="message" placeholder="message"></textarea>
+
+                </div>
+                <div>
+                    <input matInput type="text" [value]="getCurrentDateTime()" readonly>
+                </div>
+                <button type="submit">Send</button>
+            </div>
+        </form>
+    </div>
+    <div>
+        <form [formGroup]="deptmessage" (ngSubmit)=" sendEmail()">
+            <div>
+                <h1>Send message to Parents</h1>
+            </div>
+            <div>
+
+                <input matInput placeholder="Name" formControlName="name" required>
+
+            </div>
+            <div>
+
+                <input matInput placeholder="Email" formControlName="email" required>
+
+            </div>
+            <div>
+
+                <textarea matInput rows="4" formControlName="message" placeholder="Message"></textarea>
+
+            </div>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</div>
+
+<div class="p-3">
+    <button class="bg-orange-400 cursor-pointer" routerLink="/">Back</button>
+</div>
